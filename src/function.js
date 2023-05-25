@@ -1,4 +1,4 @@
-function orderByProps(obj, props) {
+export default function orderByProps(obj, props) {
   const firstPropsList = [];
   const restPropsList = [];
   for (const objKey in obj) {
@@ -11,18 +11,7 @@ function orderByProps(obj, props) {
     }
   }
   restPropsList.sort((a, b) => {
-    if (a.key < b.key) {
-      return -1;
-    }
-    if (a.key > b.key) {
-      return 1;
-    }
-    return 0;
+    return a.key < b.key ? -1 : 1;
   });
-  console.log([...firstPropsList, ...restPropsList]);
   return [...firstPropsList, ...restPropsList];
 }
-
-const obj = { name: "мечник", health: 10, level: 2, attack: 80, defence: 40 };
-
-orderByProps(obj, ["name", "level"]);

@@ -1,8 +1,8 @@
 {
-  "name": "advanced",
+  "name": "advanced-forin",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/function.js",
   "scripts": {
     "test": "jest --coverage ",
     "lint": "eslint .",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git"
+    "url": "git+https://github.com/Liaksej/ajs-advanced-forIn.git"
   },
   "author": "Liaksej",
   "license": "ISC",
